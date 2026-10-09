@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vs Авто · Автосервис, развал-схождение</title>
+<meta name="description" content="Развал-схождение, шиномонтаж, кондиционеры, тормоза и слесарные работы. Цены на сайте, запись на удобное время.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Развал-схождение и автосервис в Санкт-Петербурге">
+<meta property="og:description" content="Развал-схождение, шиномонтаж, кондиционеры, тормоза и слесарные работы. Цены на сайте, запись на удобное время.">
+<meta property="og:image" content="assets/hero.webp">
+<link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%276%27 width=%2720%27 height=%2720%27 rx=%275%27 fill=%27%23d3dae1%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --c-canvas: #0c0d0f; --c-surface: #17191c; --c-ink: #f1f2f4; --c-ink-soft: #9ba1a9; --c-accent: #d3dae1; --c-accent-ink: #0c0d0f; --c-accent-deep: #d3dae1; --f-display: "Rubik", "Arial", system-ui, sans-serif; --f-text: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif; --h1k: 0.66; }
+</style>
+<link rel="stylesheet" href="style-prod.css">
+<style>
+/* ---- виджет-сотрудник: отвечаем сразу, круглосуточно ------------------- */
+.agent { position: fixed; right: clamp(12px, 2vw, 28px); bottom: clamp(12px, 2.4vh, 28px); z-index: 60;
+  display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--c-ink); }
+.agent__bubble { display: grid; gap: 2px; padding: 10px 16px; border-radius: 16px 16px 4px 16px;
+  background: var(--c-surface); box-shadow: 0 10px 30px rgb(0 0 0 / .45), 0 0 0 1px rgb(255 255 255 / .08);
+  font-family: var(--f-text); line-height: 1.25; max-width: 15rem;
+  opacity: 0; transform: translateY(8px); animation: agent-in .5s 1.4s cubic-bezier(.2,.7,.2,1) forwards; }
+.agent__bubble b { font-size: .95rem; font-weight: 700; }
+.agent__bubble span { font-size: .8rem; color: var(--c-ink-soft); }
+.agent__photo { position: relative; flex: none; width: 64px; height: 64px; border-radius: 50%;
+  box-shadow: 0 0 0 3px var(--c-accent), 0 10px 26px rgb(0 0 0 / .45); transition: transform .2s ease-out; }
+.agent__photo img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; }
+.agent__photo::before { content: ""; position: absolute; inset: -3px; border-radius: 50%; border: 2px solid var(--c-accent);
+  animation: agent-pulse 2.6s ease-out infinite; pointer-events: none; }
+.agent__photo i { position: absolute; right: 1px; bottom: 1px; width: 15px; height: 15px; border-radius: 50%;
+  background: #2fbf5b; box-shadow: 0 0 0 3px var(--c-surface); }
+.agent:hover .agent__photo, .agent:focus-visible .agent__photo { transform: scale(1.05); }
+.agent:focus-visible { outline: 2px solid var(--c-accent); outline-offset: 4px; border-radius: 40px; }
+@keyframes agent-in { to { opacity: 1; transform: none; } }
+@keyframes agent-pulse { 0% { opacity: .8; transform: scale(1); } 70%, 100% { opacity: 0; transform: scale(1.35); } }
+.agent__photo b { display: none; position: absolute; left: 50%; bottom: -9px; transform: translateX(-50%); padding: 1px 6px; border-radius: 8px;
+  background: var(--c-accent); color: var(--c-accent-ink); font: 700 10px/1.4 var(--f-text); white-space: nowrap; }
+@media (max-width: 640px) {
+  .agent { bottom: calc(80px + env(safe-area-inset-bottom)); }
+  .agent__bubble { display: none; }
+  .agent__photo { width: 54px; height: 54px; }
+  .agent__photo i { right: -2px; bottom: auto; top: 0; width: 13px; height: 13px; }
+  .agent__photo b { display: block; }
+}
+.agent { transition: opacity .25s ease-out, transform .25s ease-out; }
+.agent.is-away { opacity: 0; transform: translateY(10px); pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { .agent__bubble { animation: none; opacity: 1; transform: none; } .agent__photo::before { animation: none; opacity: 0; } }
+/* ---- правки Юрия 08.10.2026 --------------------------------------------- */
+/* заголовок первого экрана: слова не переносятся и не рвутся, слова с дефисом не разрываются */
+.s-hero h1 { hyphens: none; -webkit-hyphens: none; overflow-wrap: normal; word-break: normal; }
+.s-hero h1 .nb { white-space: nowrap; }
+/* верхняя шапка (имя компании, телефон, кнопка) крупнее на 25 % */
+.s-bar { padding-top: 12px; padding-bottom: 12px; }
+.s-bar__brand { font-size: 1.25rem; min-height: 48px; }
+.s-bar__tel { font-size: 1.2rem; }
+.s-bar .s-btn--sm { font-size: 1.05rem; min-height: 46px; }
+@media (max-width: 640px) {
+  .s-bar__brand { font-size: 1.15rem; }
+  .s-bar .s-btn--sm { font-size: .98rem; min-height: 44px; padding: 0 1em; }
+}
+</style>
+</head>
+<body class="s-prod" id="top" data-wa="" data-tg="" data-max="">
+<header class="s-bar" data-s-bar>
+  <a class="s-bar__brand" href="#top"><i aria-hidden="true"></i>Vs Авто</a>
+  <div class="s-bar__right">
+    <a class="s-bar__tel" href="tel:+79112821301">+7 (911) 282-13-01</a>
+    <a class="s-btn s-btn--sm" href="#widget">Записаться</a>
+  </div>
+</header>
+<main>
+  <section class="s-hero">
+    <div class="s-hero__text">
+      <p class="s-eyebrow">Развал-схождение, шиномонтаж, ремонт · Санкт-Петербург</p>
+      <h1><span class="nb">Развал-схождение</span> и автосервис в <span class="nb">Санкт-Петербурге</span></h1>
+      <p class="s-lead">Развал-схождение, шиномонтаж, кондиционеры, тормоза и слесарные работы. Цены на сайте, запись на удобное время.</p>
+      <ul class="s-ticks"><li>Развал-схождение на стенде</li><li>Шиномонтаж и слесарные работы</li><li>Заправка и диагностика кондиционеров</li></ul>
+      <p class="s-rating"><b>4,7</b> на Яндекс.Картах · 78 отзывов</p>
+      <figure class="s-hero__photo"><img class="" src="assets/hero.webp" alt="Автосервис Vs Авто: зелёные боксы и въезд на Мартыновской улице" loading="lazy" decoding="async" style="object-position:50% 50%"></figure>
+    </div>
+    <div class="s-hero__widget" id="widget"><form class="s-widget" data-s-booking data-days="7" data-closed="" data-slots="10:00,11:00,12:00,13:00,14:00,15:00,16:00,17:00,18:00,19:00" data-message="Здравствуйте! Хочу записаться в сервис: {услуга}, {день} в {время}. Марку, год и что беспокоит – напишу ниже." onsubmit="return false">
+      <h2 class="s-widget__title">Запись</h2>
+      <fieldset><legend>Услуга</legend>
+        <div class="s-chips s-chips--col"><label class="s-chip s-chip--row"><input type="radio" name="svc" value="0" data-name="Развал-схождение" data-price="" data-from="" data-min="" checked><span>Развал-схождение</span><b></b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="1" data-name="Шиномонтаж" data-price="" data-from="" data-min=""><span>Шиномонтаж</span><b></b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="2" data-name="Диагностика электронных систем автомобиля" data-price="500" data-from="" data-min=""><span>Диагностика электронных систем автомобиля</span><b>500 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="3" data-name="Заправка и диагностика автомобильных кондиционеров" data-price="2500" data-from="" data-min=""><span>Заправка и диагностика автомобильных кондиционеров</span><b>2 500 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="4" data-name="Замена тормозных колодок" data-price="700" data-from="" data-min=""><span>Замена тормозных колодок</span><b>700 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="5" data-name="Замена рулевого наконечника" data-price="500" data-from="" data-min=""><span>Замена рулевого наконечника</span><b>500 ₽</b></label></div>
+      </fieldset>
+      <fieldset><legend>День</legend><div class="s-chips" data-s-days></div></fieldset>
+      <fieldset><legend>Время</legend><div class="s-chips" data-s-times></div></fieldset>
+      <div class="s-bubble" aria-live="polite"><span class="s-bubble__label">Что назвать по телефону</span><p data-s-bubble></p></div>
+      <div class="s-send">
+        <a class="s-btn s-btn--wide" href="tel:+79112821301">Позвонить и записаться</a>
+        
+      </div>
+      <p class="s-send__note" data-s-copied hidden>Текст скопирован – вставьте его в чат.</p>
+      
+    </form></div>
+    <figure class="s-hero__bg" aria-hidden="true"><img class="" src="assets/hero.webp" alt="Автосервис Vs Авто: зелёные боксы и въезд на Мартыновской улице" decoding="async" style="object-position:50% 50%" fetchpriority="high"></figure>
+  </section>
+
+  
+
+  <section class="s-section s-reveal" id="prices">
+    <header class="s-section__head"><h2>Цены</h2><p>Цены на основные работы. Прайс обновлён 1 сентября.</p></header>
+    <div class="s-board"><div class="s-board__group">
+      <h3 class="s-board__title">Диагностика и кондиционеры</h3>
+      <ul class="s-board__list">
+        <li class="s-board__row"><span class="s-board__name">Диагностика электронных систем автомобиля</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">500 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Заправка и диагностика автомобильных кондиционеров</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 500 ₽</span></li>
+      </ul>
+    </div>
+<div class="s-board__group">
+      <h3 class="s-board__title">Тормоза и рулевое</h3>
+      <ul class="s-board__list">
+        <li class="s-board__row"><span class="s-board__name">Замена тормозных колодок</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">700 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Замена рулевого наконечника</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">500 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Снятие буртиков</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">500 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Измерение биений плоскости тормозных дисков</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">100 ₽</span></li>
+      </ul>
+    </div>
+<div class="s-board__group">
+      <h3 class="s-board__title">Колёса</h3>
+      <ul class="s-board__list">
+        <li class="s-board__row"><span class="s-board__name">Развал-схождение</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+        <li class="s-board__row"><span class="s-board__name">Шиномонтаж</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+      </ul>
+    </div></div>
+    <p class="s-note">Стоимость развал-схождения и остальных работ назовём по телефону.</p>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Как проходит</h2></header>
+    <ol class="s-steps">
+      <li class="s-steps__item"><span class="s-steps__n">01</span><h3>Записались на время</h3><p>В форме выше, по телефону или в мессенджере.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">02</span><h3>Приехали к нам</h3><p>Ждём вас по адресу: Мартыновская ул., 3Б.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">03</span><h3>Согласовали работы</h3><p>Мастер уточняет задачу и называет стоимость.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">04</span><h3>Забрали машину</h3><p>Готово к назначенному времени.</p></li>
+    </ol>
+  </section>
+
+  <section class="s-photos s-reveal" aria-label="Фото"><figure><img class="" src="assets/banner.webp" alt="Баннер на заборе: шиномонтаж, развал-схождение, слесарные работы" loading="lazy" decoding="async" style="object-position:50% 50%"><figcaption>Шиномонтаж, развал-схождение, слесарные работы</figcaption></figure><figure><img class="" src="assets/ac.webp" alt="Станция для заправки кондиционеров" loading="lazy" decoding="async" style="object-position:50% 50%"><figcaption>Станция для кондиционеров</figcaption></figure><figure><img class="" src="assets/bay.webp" alt="Открытый бокс автосервиса" loading="lazy" decoding="async" style="object-position:50% 50%"><figcaption>Бокс</figcaption></figure></section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Что здесь есть</h2></header>
+    <ul class="s-promises">
+      <li><h3>Развал-схождение</h3><p>Регулировка углов колёс на стенде, мастер всё объясняет и показывает.</p></li>
+      <li><h3>Шиномонтаж</h3><p>Смена и ремонт колёс.</p></li>
+      <li><h3>Тормоза и рулевое</h3><p>Колодки, рулевые наконечники, проточка дисков.</p></li>
+      <li><h3>Двигатель</h3><p>Капитальный ремонт двигателя.</p></li>
+    </ul>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head s-section__head--reviews"><h2>Отзывы с Яндекс.Карт</h2><p class="s-reviews__rating"><span class="s-reviews__num">4,7</span><span class="s-reviews__stars" style="--r: 4.7" aria-label="рейтинг 4,7 из 5"></span><span class="s-reviews__count">78 отзывов</span><a class="s-reviews__all" href="https://yandex.ru/maps/org/vs_avto/145918314048/reviews/" target="_blank" rel="noopener">Читать все отзывы на Яндекс.Картах</a></p></header>
+    <ul class="s-reviews">
+      <li><blockquote>«Постоянно приезжаю делать сюда развал на всех своих авто, так же и рабочую лошадку пригоняем сюда. Качественно и по хорошей цене. Рекомендую.»</blockquote><p class="s-reviews__who">Darkwing Duck · 13 мая 2025</p></li>
+      <li><blockquote>«Делал развал у Вадима, лучше подхода к своему делу не видел, всем рекомендую мастер своего дела !»</blockquote><p class="s-reviews__who">Владислав О. · 5 сентября 2025</p></li>
+      <li><blockquote>«Делала развал-схождение в этом сервисе. Мастер Вадим Тимофеевич очень понравился своим отношением к делу. Очень профессиональный подход к диагностике и к работе в целом. Давно такие профи не попадались. Очень рекомендую.»</blockquote><p class="s-reviews__who">Мария З. · 28 мая 2024</p></li>
+    </ul>
+    <p class="s-note">Отзывы с карточки на Яндекс.Картах, без правок.</p>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Частые вопросы</h2></header>
+    <div class="s-faq"><details><summary>Нужна ли запись?</summary><p>Лучше записаться: выберите время в форме выше или позвоните нам по +7 (911) 282-13-01.</p></details><details><summary>Сколько стоит замена тормозных колодок?</summary><p>Замена тормозных колодок стоит 700 ₽, замена рулевого наконечника – 500 ₽.</p></details><details><summary>Заправляете ли вы кондиционеры?</summary><p>Да, заправка и диагностика автомобильных кондиционеров стоит 2 500 ₽.</p></details><details><summary>Когда вы работаете?</summary><p>Мы работаем ежедневно с 10:00 до 20:00. Адрес: Мартыновская улица, 3Б.</p></details></div>
+  </section>
+
+  <section class="s-section s-final s-reveal" id="contacts">
+    <header class="s-section__head"><h2>Запишитесь на удобное время</h2></header>
+    <div class="s-contacts">
+      <dl>
+        <div><dt>Адрес</dt><dd>Мартыновская ул., 3Б, Санкт-Петербург</dd></div>
+        <div><dt>Часы</dt><dd>Каждый день 10:00–20:00</dd></div>
+        <div><dt>Телефон</dt><dd><a href="tel:+79112821301">+7 (911) 282-13-01</a></dd></div>
+      </dl>
+      <div class="s-contacts__actions">
+        <a class="s-btn" href="#widget">Записаться</a>
+        
+        
+      </div>
+    </div>
+  </section>
+</main>
+<!-- agent-widget -->
+<a class="agent" href="#widget" aria-label="Написать нам: отвечаем сразу, круглосуточно">
+  <span class="agent__bubble"><b>Отвечаем сразу</b><span>круглосуточно, администратор на связи</span></span>
+  <span class="agent__photo"><img src="assets/agent.webp" alt="" width="64" height="64" loading="lazy"><i aria-hidden="true"></i><b aria-hidden="true">24/7</b></span>
+</a>
+<!-- /agent-widget -->
+<footer class="s-foot"><p>Vs Авто · Санкт-Петербург</p><p>Автосервис, развал-схождение</p></footer>
+<nav class="s-dock" aria-label="Быстрая связь"><a class="s-btn" href="#widget">Записаться</a><a class="s-btn s-btn--ghost" href="tel:+79112821301">Позвонить</a></nav>
+<script src="style.js" defer></script>
+<script>
+  // кружок менеджера прячется, пока на экране форма записи (не наезжает на неё)
+  (function () {
+    var a = document.querySelector('.agent'), w = document.getElementById('widget');
+    if (!a || !w || !('IntersectionObserver' in window)) return;
+    new IntersectionObserver(function (es) { a.classList.toggle('is-away', es[0].isIntersecting); }, { rootMargin: '0px 0px -90px 0px' }).observe(w);
+  })();
+</script>
+</body>
+</html>
